@@ -13,7 +13,8 @@ if both choose same object, it is a draw
 var main = function (input) {
   var myOutputValue = "";
   var inputLowCaps = input.toLowerCase();
-  
+  var comp = computerChoice();
+
   if((inputLowCaps.includes("reverse"))){
         myOutputValue = reverseGame(input, "scissors");
   } else if(!(inputLowCaps == "scissors" ||
@@ -35,8 +36,7 @@ var main = function (input) {
   //          //myOutputValue = gameResult(input, "scissors");
   //          myOutputValue = reverseGame(input, "scissors");
   //     }
- 
-
+  
   return myOutputValue;
 };
 
@@ -96,17 +96,17 @@ function gameResult(user, computer){
                 Now you can type "scissors", "paper" or "stone" to play another round!`;
       }
 }
-function generateIcons(object){
-    if(object == 'scissors'){
-      return "&#9988";
-    }
-    if(object == 'paper'){
-      return "&#9995";
-    }
-    if(object == 'stone'){
-      return "&#9994"
-    }
-  }
+// function generateIcons(object){
+//     if(object == 'scissors'){
+//       return "&#9988";
+//     }
+//     if(object == 'paper'){
+//       return "&#9995";
+//     }
+//     if(object == 'stone'){
+//       return "&#9994"
+//     }
+//   }
 
   /*Reverse game
   - rules are reversed if inputs "reversed stone", "reversed      paper" or reversed stone
