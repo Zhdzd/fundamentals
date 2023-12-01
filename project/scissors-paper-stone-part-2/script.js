@@ -133,7 +133,6 @@ function reverseGame(user, computer){
       var winRate = winningPercentage(userWin);
       var loseRate = losingPercentage(userLoss);
 
-    
       if((userChoice == 'scissors') && (computer == 'paper') ||
           (userChoice == 'paper') && (computer == 'stone') ||
           (userChoice == 'stone') && (computer == 'scissors') 
